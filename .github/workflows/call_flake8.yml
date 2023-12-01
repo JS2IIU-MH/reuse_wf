@@ -1,7 +1,7 @@
-name: call reusable Flake8
+name: Call reusable Flake8
 
 on: [push]
 
 jobs:
-  call-workflow-1-in-local-repo:
+  call-workflow:
     uses: JS2IIU-MH/reuse_wf/.github/workflows/re_flake8.yml@main
