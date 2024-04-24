@@ -22,7 +22,8 @@ Reusable Github workflow
 | [`.github\actions\create_env_cache\action.yml`](.github\actions\create_env_cache\action.yml) | Actionの設定ファイル | `.github\actions\create_env_cache\`以下に配置してください。Actionsの実行を高速化するためキャッシュを生成します。 | 
 
 ## 対象リポジトリの設定
-- リポジトリの[Setting]-[Actions]-[General]の設定で[Workflow permissions]を確認してください。Read and write permissionsにチェックしているか確認してください。この設定がされていないとActionがうまく動きません。
+- 呼び出し側リポジトリの一番上の階層に`requirements.txt`を置いてください。Actionsの実行に必要です。仮想環境を使われている方は問題ないと思いますが、仮想環境を使わずに開発されている場合でいろいろインストールしているとActionsの実行に時間がかかる場合があります。
+- 呼び出し側リポジトリの[Setting]-[Actions]-[General]の設定で[Workflow permissions]を確認してください。Read and write permissionsにチェックしているか確認してください。この設定がされていないとActionがうまく動きません。
 
   <img src="./doc/004.png" width=600>
 
