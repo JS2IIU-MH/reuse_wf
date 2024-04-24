@@ -35,3 +35,5 @@ Reusable Github workflow
 - [ワークフローの再利用 - GitHub Docs](https://docs.github.com/ja/actions/using-workflows/reusing-workflows)
 - [Check! GitHub Actions 再利用可能なワークフローのポイントを抑える](https://zenn.dev/dzeyelid/articles/fc4bd999fbccd8)
 - [GitHub Actions の「ワークフローの再利用」をプライベートリポジトリで使う - kakakakakku blog](https://kakakakakku.hatenablog.com/entry/2023/01/10/081119)
+- [RubbaBoy/BYOB: Bring Your Own Badge - Create dynamic README badges based off of your GitHub Actions](https://github.com/RubbaBoy/BYOB)
+- [Bring Your Own Badge · Actions · GitHub Marketplace](https://github.com/marketplace/actions/bring-your-own-badge)
