@@ -8,10 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
-      PYTHON_39_VERSION: 3.9.12
-      PYTHON_310_VERSION: 3.10.4
-      PYTHON_311_VERSION: 3.11.1
-      PYTHON_312_VERSION: 3.12.0
+#      PYTHON_39_VERSION: 3.9.12
+#      PYTHON_310_VERSION: 3.10.4
+      PYTHON_311_VERSION: 3.11.10
+      PYTHON_312_VERSION: 3.12.7
+      PYTHON_313_VERSION: 3.13.1
       CHECKING_BADGE_COLOR: FFAA00
       PASSING_BADGE_COLOR: 0088FF
       RUNNING_OR_FAILING_STATUS: running or failed
@@ -28,10 +29,11 @@ jobs:
     strategy:
       matrix:
         python-version: [
-          '${{ needs.SetGlobalConstants.outputs.PYTHON_39_VERSION }}',
-          '${{ needs.SetGlobalConstants.outputs.PYTHON_310_VERSION }}',
+#          '${{ needs.SetGlobalConstants.outputs.PYTHON_39_VERSION }}',
+#          '${{ needs.SetGlobalConstants.outputs.PYTHON_310_VERSION }}',
           '${{ needs.SetGlobalConstants.outputs.PYTHON_311_VERSION }}',
           '${{ needs.SetGlobalConstants.outputs.PYTHON_312_VERSION }}',
+          '${{ needs.SetGlobalConstants.outputs.PYTHON_313_VERSION }}',
         ]
     timeout-minutes: 20
     steps:
@@ -72,10 +74,11 @@ jobs:
     strategy:
       matrix:
         python-version: [
-          '${{ needs.SetGlobalConstants.outputs.PYTHON_39_VERSION }}',
-          '${{ needs.SetGlobalConstants.outputs.PYTHON_310_VERSION }}',
+#          '${{ needs.SetGlobalConstants.outputs.PYTHON_39_VERSION }}',
+#          '${{ needs.SetGlobalConstants.outputs.PYTHON_310_VERSION }}',
           '${{ needs.SetGlobalConstants.outputs.PYTHON_311_VERSION }}',
           '${{ needs.SetGlobalConstants.outputs.PYTHON_312_VERSION }}',
+          '${{ needs.SetGlobalConstants.outputs.PYTHON_313_VERSION }}',
         ]
     steps:
       - name: Checkout

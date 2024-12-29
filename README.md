@@ -31,6 +31,12 @@ Reusable Github workflow
 
   <img src="./doc/003.png" width=600>
 
+## Change Log
+
+| date | change |
+| --- | --- |
+| 2024/12/29 | Python 3.11.10, 3.12.7, 3.13.1でflake8テストするように変更しました |
+
 ## Reference
 - [ワークフローの再利用 - GitHub Docs](https://docs.github.com/ja/actions/using-workflows/reusing-workflows)
 - [Check! GitHub Actions 再利用可能なワークフローのポイントを抑える](https://zenn.dev/dzeyelid/articles/fc4bd999fbccd8)
