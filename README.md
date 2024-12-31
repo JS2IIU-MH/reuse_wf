@@ -20,10 +20,9 @@ Reusable Github workflow
 | --------------- | ---- | --- | 
 | [`.github\workflows\call_flake8.yml`](.github\workflows\call_flake8.yml) | 呼び出す側のymlファイル | このファイルを呼び出す側のリポジトリに設置する。`./github/workflows/`の下に。~~おそらくこのファイルを置くだけで良いはず。~~<br>呼び出すテスト内容に応じて書き換える。 | 
 | [`.github\actions\create_env_cache\action.yml`](.github\actions\create_env_cache\action.yml) | Actionの設定ファイル | `.github\actions\create_env_cache\`以下に配置してください。Actionsの実行を高速化するためキャッシュを生成します。 | 
-| 以下、テスト内容に応じて使い分ける | |
+| **以下、テスト内容に応じて使い分ける** | |
 | [`.github\workflows\re_flake8.yml`](.github\workflows\re_flake8.yml)   | 呼び出されるymlファイル | push時にいくつかのPythonバージョンでflake8テストを実行。リポジトリ内すべての*.pyファイルが対象。テスト状況をREADMEのBYOBバッジで表示する。 | 
-
-| [`.github\workflows\re_flake8_pytest.yml`](.github\workflows\re_flake8_pytest.yml) | 呼び出されるymlファイル| トリガされると、`flake8`, `pytest` を実行。リポジトリ内すべての*.pyファイルが対象。テスト状況をREADMEのBYOBバッジで表示する。|
+| [`.github\workflows\re_flake8_pytest.yml`](.github\workflows\re_flake8_pytest.yml) | 呼び出されるymlファイル | トリガされると、`flake8`, `pytest` を実行。リポジトリ内すべての*.pyファイルが対象。テスト状況をREADMEのBYOBバッジで表示する。|
 
 
 ## 対象リポジトリの設定
