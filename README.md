@@ -36,6 +36,9 @@ Reusable Github workflow
 
   <img src="./doc/003.png" width=600>
 
+## 実行時イメージ
+  <img src="./doc/workflow_diagram.png" width=700>
+
 ## Change Log
 
 | date | change |
