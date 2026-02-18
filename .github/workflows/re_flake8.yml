@@ -21,7 +21,7 @@ jobs:
       PASSING_LINTS_BADGE_LABEL: 'flake8'
       DATE_BADGE_COLOR: 4B0082
     steps:
-      - run: echo 'Setting constans.'
+      - run: echo 'Setting constants.'
 
   CreateCache:
     needs: SetGlobalConstants

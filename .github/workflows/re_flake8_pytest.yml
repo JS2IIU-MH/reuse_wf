@@ -30,7 +30,7 @@ jobs:
       PASSING_PYTEST_BADGE_NAME: passing_pytest
       PASSING_PYTEST_BADGE_LABEL: 'pytest'
     steps:
-      - run: echo 'Setting constans.'
+      - run: echo 'Setting constants.'
 
   CreateCache:
     needs: SetGlobalConstants
